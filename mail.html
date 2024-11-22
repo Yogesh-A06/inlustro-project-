@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Mail</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+
+        }
+        body{
+            background-color: grey ;
+            opacity: .7;
+        }
+        .h1{
+            display: flex;
+            margin-left: 70px;
+            margin-top: 20px;
+            color: aliceblue;
+        }
+        .main{
+            display: flex;
+            flex-direction: column;
+            height: 600px;
+            width: 85%;
+            margin-left: 70px;
+            margin-top: 60px;
+            background-color: whitesmoke;
+            padding: 40px;
+            border-radius: 10% 10% 10% 10%;
+            box-shadow: 4px 4px 4px 4px  black ;
+            /* filter: drop-shadow(2px 2px 2px black); */
+
+        }
+        .to{
+            display: flex;
+            height: 33%;
+            width: 80%;
+            margin: 20px;
+            padding: 30px;
+                     
+        }
+        .sub{
+            display: flex;
+            height: 33%;
+            width: 80%;
+            margin: 20px;
+            padding: 30px;
+                     
+        }
+        .com{
+            display: flex;
+            height: 33%;
+            width: 80%;
+            margin: 20px;
+            padding: 30px;
+                     
+        }
+        .a1{
+            display: flex;
+            margin:20px;
+
+        }
+        .a2{
+            display: flex;
+            margin:20px;
+            
+
+        }
+        .b1{
+            display: flex;
+            margin:20px;
+
+        }
+        .b2{
+            display: flex;
+            margin:20px;
+            
+
+        }
+        .c1{
+            display: flex;
+            margin:20px;
+
+        }
+        .c2{
+            display: flex;
+            margin:20px;
+            
+
+        }
+        .c2::placeholder{
+            display: flexs;
+            text-align: center;
+        }
+        .inp{
+            padding: 4px;
+            border: 1px solid black;
+
+            
+        }
+        .inp:hover{
+            box-shadow: 3px 3px 3px black;
+        }
+        .but{
+            display: flex;
+            margin: 40px;
+            padding: 8px;
+            margin-left: 550px;
+            width: 200px;
+            }
+        .but:hover{
+            box-shadow: 2px 2px 2px black;
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="h1"><h1>Hello! Mail...</h1></div>
+    
+    <form action="http://localhost:8080/inluemail" method="post">
+        <div class="main">
+            <div class="to">
+                <div class="a1">To</div>
+                <div class="a2"><input class="inp" type="email" style="width: 350px;" name="email"></div>
+            </div>
+            <div class="sub">
+                <div class="b1">Subject</div>
+                <div class="b2"><input class="inp" type="text" style="width: 350px;" name="sub"></div>
+            </div>
+            <div class="com">
+                <div class="c1">Compose </div>
+                <div class="c2"><Textarea class="inp" rows="10" cols="60" placeholder="Enter Content Here....." name="message"></Textarea></div>
+            </div>
+            <div class="btn"> <input class="but" type="submit" value="Sent "> </div>
+             
+        </div>
+    </form>
+</body>
+</html>
